@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package ApiV1;
+
+service StoreService {
+  rpc SumItems(Request) returns (Response) {}
+}
+message Request {
+
+}
+
+message Response {
+  uint32 sum = 1;
+}
